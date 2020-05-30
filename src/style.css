@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+:root{
+  --main-white:#f0f0f0;
+  --main-blue:#05386B;
+  --main-green:#5CDB95;
+}
+*{
+  padding:0;
+  margin:0;
+}
+html{
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body{
+  color:var(--main-white);
+  font-family: 'Bangers', cursive;
+}
+#navbar{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:var(--main-green);
+}
+.nav-list{
+  display:flex;
+  margin-right:4rem;
+  list-style-type:none;
+}
+.nav-list a{
+  font-size:1.7rem;
+  padding:2.3rem;
+  display:block;
+  font-family: 'Rubik Mono One', sans-serif;
+}
+h1{
+  font-size:6rem;
+}
+h2{
+  font-size:2.5rem;
+}
+h3{
+  font-size:4rem;
+}
+a{
+  color:var(--main-blue);
+  text-decoration:none;
+}
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-green)
+}
+#welcome-section p{
+  color:var(--main-blue);
+  font-size:4rem;
+}
+#projects{
+  width:80vw;
+  margin:auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+.title{
+  text-align:center;
+  font-size:5rem;
+  color:var(--main-blue);
+}
+.project-tile{
+  display:flex;
+  width:400px;
+  max-width:390px;
+  height:410px;
+  color:black;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin:5px;
+  justify-content:center;
+  padding:10px;
+}
+img{
+  width:100%;
+}
+footer{
+  text-align:center;
+  padding:10px;
+}
+@media(max-width:200px)
+{
+  .project-tile{
+    padding:30px;
+  }
+}
